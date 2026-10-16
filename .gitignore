@@ -1,0 +1,36 @@
+# Dependencies, builds and downloaded runtimes
+node_modules/
+dist/
+.npm-cache/
+tools/
+
+# Private studio state, prompts, history, models and benchmark reports
+data/
+models/
+.ollama/
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.gguf
+*.ggml
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# Local configuration, credentials and test output
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.log
+test-results/
+playwright-report/
+coverage/
+
+# Workstation-specific recovery helper; requires private download state
+scripts/import-downloaded-model.ps1
